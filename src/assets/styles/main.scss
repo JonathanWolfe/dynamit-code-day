@@ -35,12 +35,12 @@ body {
 }
 
 main {
+	display: flex;
 	width: 100%;
 	max-width: $max-width;
 	align-self: flex-start;
 	margin: 0 auto;
 	padding: 3em;
-	display: flex;
 	flex-direction: column;
 }
 
@@ -97,10 +97,6 @@ h1.huge-text {
 		padding-top: 2em;
 		flex-wrap: wrap;
 		align-content: flex-start;
-
-		&:first-of-type {
-			margin-left: 0;
-		}
 
 		.image {
 			margin: 0 1em;
