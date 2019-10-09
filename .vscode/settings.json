@@ -1,0 +1,12 @@
+{
+	"files.exclude": {
+		"**/.git*": true,
+		"**/node_modules": true,
+		"**/dist": true,
+		"package-lock.json": true
+	},
+	"eslint.autoFixOnSave": true,
+	"editor.formatOnType": false,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+}

@@ -1,0 +1,136 @@
+/**
+ * Dynamit Code Day Punk API
+ */
+
+$max-width: 66rem;
+$breakpoint: 48rem;
+
+$color-black: #333;
+$color-white: #fff;
+$color-red: #E75A3A;
+$color-blue: #00AFDB;
+$color-grey: #9da3a5;
+
+$border-radius: 0.3em;
+
+@import "normalize";
+@import "h5bp";
+
+html {
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+body {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+main {
+	width: 100%;
+	max-width: $max-width;
+	align-self: flex-start;
+	margin: 0 auto;
+	padding: 3em;
+	display: flex;
+	flex-direction: column;
+}
+
+.vertical-center {
+	align-self: center;
+}
+
+h1.huge-text {
+	font-size: 4rem;
+	text-align: center;
+	margin-top: 0;
+}
+
+#load-btn {
+	display: block;
+	margin: 0 auto;
+	background-color: $color-red;
+	padding: 1.25em;
+	border: 0;
+	border-radius: $border-radius;
+	color: $color-white;
+	font-weight: bold;
+	cursor: pointer;
+
+	&:hover {
+		background-color: darken($color-red, 12%);
+	}
+
+	&:active {
+		background-color: darken($color-red, 20%);
+	}
+}
+
+#loading {
+	margin: 0 auto;
+}
+
+#beers {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-wrap: wrap;
+	min-height: 100%;
+	width: 100%;
+	justify-content: space-between;
+
+	.item {
+		display: flex;
+		flex-direction: row;
+		width: calc((#{$max-width} / 4) - 2em);
+		min-height: 150px;
+		flex-grow: 0;
+		padding-top: 2em;
+		flex-wrap: wrap;
+		align-content: flex-start;
+
+		&:first-of-type {
+			margin-left: 0;
+		}
+
+		.image {
+			margin: 0 1em;
+			border: 1px solid $color-black;
+			padding: 3px;
+			width: 100%;
+			height: 150px;
+			cursor: pointer;
+
+			img {
+				object-fit: contain;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+		.name {
+			display: flex;
+			flex-grow: 1;
+			width: 60%;
+			margin: .5em 0 .5em 1em;
+		}
+
+		.abv {
+			display: flex;
+			flex-grow: 0;
+			margin: .5em 1em .5em 0;
+			text-align: right;
+			align-self: flex-start;
+			justify-self: right;
+		}
+	}
+}

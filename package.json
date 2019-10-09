@@ -1,0 +1,41 @@
+{
+  "name": "punk-api",
+  "description": "",
+  "private": true,
+  "version": "0.1.0",
+  "main": "main.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "gulp --dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dynamit",
+  "license": "MIT",
+  "browserslist": [
+    "defaults"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.6.3",
+    "@babel/core": "^7.6.3",
+    "@babel/preset-env": "^7.6.3",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.14.3",
+    "browserify": "^16.5.0",
+    "del": "^5.1.0",
+    "eslint": "6.5.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.7",
+    "uglify": "^0.1.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0"
+  }
+}
